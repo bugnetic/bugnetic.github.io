@@ -1,0 +1,48 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #000;
+    background: url(../../background.jpeg) no-repeat fixed center padding-box;
+    background-size: cover
+}
+
+.bg-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, rgba(0, 0, 0, 0.3), rgba(58, 58, 58, 0.3), rgba(148, 148, 148, 0.3), rgba(255, 255, 255, 0.3));
+    background-size: 400% 400%;
+    animation: gradient 5s alternate-reverse infinite;
+    cursor: default
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0 50%
+    }
+
+    to {
+        Background-position: 100% 50%
+    }
+}
+
+.bg-gradient l {
+    color: #971e00;
+    font-size: 65px;
+    font-family: monospace;
+    font-weight: 700;
+    cursor: default;
+    transition: ease-in-out .3s
+}
+
+.bg-gradient l:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .2s
+}
